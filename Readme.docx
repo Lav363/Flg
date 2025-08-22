@@ -1,0 +1,35 @@
+📘 FLAG IDENTIFIER AI
+=========================
+
+A deep learning–based web app that predicts the country name of a flag using a trained CNN model and a dataset of 224 countries.
+
+────────────────────────────────────────────
+📁 PROJECT STRUCTURE
+────────────────────────────────────────────
+| File / Folder                         | Description                                 |
+|--------------------------------------|---------------------------------------------|
+| app.py                               | Main Flask backend application               |
+| templates/index.html                 | HTML frontend interface                      |
+| static/                              | Folder to store uploaded images              |
+| flag_model.h5                        | Trained CNN model file                       |
+| country-flags-in-the-wild/train/     | Flag images organized by 224 country folders |
+| README.txt / README.md               | Project documentation                        |
+
+────────────────────────────────────────────
+🛠️ TECHNOLOGIES USED
+────────────────────────────────────────────
+| Component     | Technology             |
+|---------------|------------------------|
+| Language      | Python 3.9+            |
+| Framework     | Flask                  |
+| ML Library    | TensorFlow, Keras      |
+| Image Utils   | Pillow                 |
+| Others        | NumPy, HTML/CSS        |
+
+────────────────────────────────────────────
+📦 REQUIREMENTS
+────────────────────────────────────────────
+To install required packages:
+
+```bash
+pip install flask tensorflow numpy pillow

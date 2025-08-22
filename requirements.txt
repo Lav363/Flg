@@ -1,0 +1,58 @@
+────────────────────────────────────────────
+🚀 HOW TO RUN THE APP
+────────────────────────────────────────────
+
+1.Activate the Python virtual environment:
+venv\Scripts\activate
+2.Run the Flask server:
+python app.py
+3.Open your browser and navigate to:
+http://127.0.0.1:5000
+────────────────────────────────────────────
+📷 HOW TO USE
+────────────────────────────────────────────
+
+Step	Action
+1	Click Choose File to upload a flag image
+2	Click Predict Country
+3	The predicted country name and image will be displayed
+────────────────────────────────────────────
+🧠 MODEL OVERVIEW
+────────────────────────────────────────────
+
+Feature	Description
+Model Type	Convolutional Neural Network
+Input Size	64 x 64 pixels (RGB)
+Output Classes	224 (One per country)
+Training Set	224 folders, 1 per country
+
+────────────────────────────────────────────
+🗺️ CLASS LABEL MAPPING
+────────────────────────────────────────────
+The folder names inside country-flags-in-the-wild/train/ are sorted alphabetically.
+Each folder name is directly used as the predicted class name.
+To show user-friendly names, you can map folder names to readable names in class_label_to_country.
+
+Example:
+class_label_to_country = {
+    'russia': 'Russia',
+    'united_states': 'United States',
+    'india': 'India',
+    ...
+}
+────────────────────────────────────────────
+📌 TROUBLESHOOTING
+────────────────────────────────────────────
+
+Model not loading? → Check if flag_model.h5 is in the correct folder.
+
+Wrong predictions? → Ensure the image is clear and centered.
+
+Class not found? → Add proper folder-to-country mappings.
+
+────────────────────────────────────────────
+📧 AUTHOR INFO
+────────────────────────────────────────────
+| Name | [Lavanya K] |
+
+
